@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .open {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 300px 100px auto;
+        display: inline-block;
+        background: rgb(55, 118, 227);
+        padding: 10px 25px;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .modal {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.6);
+        inset: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+      }
+
+      .modal-content {
+        position: relative;
+        width: 300px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        text-decoration: none;
+      }
+      .modal:target {
+        opacity: 1;
+        visibility: visible;
+      }
+      .btn {
+        padding: 10px 15px;
+        border: 1px solid #d0d0d0;
+        border-radius: 4px;
+        background: white;
+        font-size: 15px;
+        margin-left: 80px;
+      }
+      .btn1 {
+        padding: 10px 15px;
+        background: #000000;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        margin-left: 5px;
+        margin-top: 30px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- <a class="open" href="#modal">Modalni Ochish</a>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2>Assalomu alaykum🖐</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+          sequi soluta libero enim unde veritatis!
+        </p>
+        <a class="close" href="#">❌</a>
+      </div>
+    </div> -->
+
+    <a class="open" href="#modal">Title</a>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <p>This is a standard modal.</p>
+        <a class="close" href="#">✕</a>
+        <div class="buttons">
+          <button class="btn">Cancel</button>
+          <button class="btn1">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <a class="open" href="#modal">Warning</a>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <p>Making this change will permanently override the existing data.</p>
+        <a class="close" href="#">✕</a>
+        <div class="buttons">
+          <button class="btn">Cancel</button>
+          <button class="btn2">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <a class="open" href="#modal">Information</a>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <p>You can access the library in the top right at any time.</p>
+        <a class="close" href="#">✕</a>
+        <div class="buttons">
+          <button class="btn">Cancel</button>
+          <button class="btn1">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <a class="open" href="#modal">Error / Delete</a>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <p>The data will be permanently deleted.</p>
+        <a class="close" href="#">✕</a>
+        <div class="buttons">
+          <button class="btn">Cancel</button>
+          <button class="btn1">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
