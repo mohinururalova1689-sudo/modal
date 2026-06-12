@@ -59,6 +59,7 @@
         background: white;
         font-size: 15px;
         margin-left: 80px;
+        cursor: pointer;
       }
       .btn1 {
         padding: 10px 15px;
@@ -69,8 +70,41 @@
         font-size: 15px;
         margin-left: 5px;
         margin-top: 30px;
+        cursor: pointer;
       }
-      
+      .btn2 {
+        padding: 10px 15px;
+        background: #f9b82b;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        margin-left: 5px;
+        margin-top: 30px;
+        cursor: pointer;
+      }
+      .btn3 {
+        padding: 10px 15px;
+        background: #1961fd;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        margin-left: 5px;
+        margin-top: 30px;
+        cursor: pointer;
+      }
+      .btn4 {
+        padding: 10px 15px;
+        background: #dd360b;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        margin-left: 5px;
+        margin-top: 30px;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -98,8 +132,8 @@
         </div>
       </div>
     </div>
-    <a class="open" href="#modal">Warning</a>
-    <div id="modal" class="modal">
+    <a class="open" href="#modal1">Warning</a>
+    <div id="modal1" class="modal">
       <div class="modal-content">
         <p>Making this change will permanently override the existing data.</p>
         <a class="close" href="#">✕</a>
@@ -109,25 +143,25 @@
         </div>
       </div>
     </div>
-    <a class="open" href="#modal">Information</a>
-    <div id="modal" class="modal">
+    <a class="open" href="#modal2">Information</a>
+    <div id="modal2" class="modal">
       <div class="modal-content">
         <p>You can access the library in the top right at any time.</p>
         <a class="close" href="#">✕</a>
         <div class="buttons">
           <button class="btn">Cancel</button>
-          <button class="btn1">Confirm</button>
+          <button class="btn3">Confirm</button>
         </div>
       </div>
     </div>
-    <a class="open" href="#modal">Error / Delete</a>
-    <div id="modal" class="modal">
+    <a class="open" href="#modal3">Error / Delete</a>
+    <div id="modal3" class="modal">
       <div class="modal-content">
         <p>The data will be permanently deleted.</p>
         <a class="close" href="#">✕</a>
         <div class="buttons">
           <button class="btn">Cancel</button>
-          <button class="btn1">Confirm</button>
+          <button class="btn4">Confirm</button>
         </div>
       </div>
     </div>
